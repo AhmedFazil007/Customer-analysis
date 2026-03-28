@@ -12,14 +12,12 @@ Analyzed customer data to identify spending patterns, campaign effectiveness, an
 ## 📈 Key Insights
 
 * Higher income customers show significantly higher spending
-* Campaign response rate is low and depends on customer recency
 * Wine and meat products generate highest revenue
 
 ## 📂 Files Included
 
 * Dataset (Excel)
 * Power BI Dashboard
-* Dashboard Screenshots
 
 ## 🚀 Outcome
 
