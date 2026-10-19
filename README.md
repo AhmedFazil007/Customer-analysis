@@ -24,6 +24,10 @@ If this were part of a marketing team's workflow, I'd start by comparing segment
 
 I'd measure **response rate, conversion rate, revenue per contacted customer and acquisition cost** before claiming that a targeting strategy worked.
 
+## Reproduce customer segmentation
+
+I've included a [Python segmentation script](python/customer_segments.py) and [method notes](docs/SEGMENTATION.md) to compare spending quartiles, income, recency and campaign response when those columns are present. The script is ready to run against the Excel workbook; outputs and any resulting figures still need validation.
+
 ## Files
 
 | File | Description |
