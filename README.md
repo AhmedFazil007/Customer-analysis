@@ -2,7 +2,7 @@
 
 **Excel · Power BI · Customer segmentation**
 
-I explored customer spending and campaign response to understand a practical marketing question: **Which customer groups and product categories deserve a closer look when planning campaigns?**
+I looked at customer spending and campaign response with one question in mind: **Which customer groups and product categories deserve a closer look when planning campaigns?**
 
 The project combines an Excel dataset with a Power BI dashboard. I focused on making spending patterns easier to compare, rather than treating every customer as part of the same audience.
 
@@ -26,7 +26,7 @@ I'd measure **response rate, conversion rate, revenue per contacted customer and
 
 ## Reproduce customer segmentation
 
-I've included a [Python segmentation script](python/customer_segments.py) and [method notes](docs/SEGMENTATION.md) to compare spending quartiles, income, recency and campaign response when those columns are present. The script is ready to run against the Excel workbook; outputs and any resulting figures still need validation.
+There's also a [Python segmentation script](python/customer_segments.py) and [method notes](docs/SEGMENTATION.md) to compare spending quartiles, income, recency and campaign response when those columns are present. The script is ready to run against the Excel workbook; outputs and any resulting figures still need validation.
 
 ## Files
 
