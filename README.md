@@ -1,40 +1,41 @@
-# Customer Analytics Project
+# Customer Analytics | Spending & Campaign Response
 
-## 📊 Overview
+**Excel · Power BI · Customer segmentation**
 
-Analyzed customer data to identify spending patterns, campaign effectiveness, and key business insights.
+I explored customer spending and campaign response to understand a practical marketing question: **Which customer groups and product categories deserve a closer look when planning campaigns?**
 
-## 🔧 Tools Used
+The project combines an Excel dataset with a Power BI dashboard. I focused on making spending patterns easier to compare, rather than treating every customer as part of the same audience.
 
-* Excel (Data Cleaning & KPI Calculation)
-* Power BI (Dashboard & Visualization)
+## Dashboard preview
 
-## 📈 Key Insights
+![Customer analytics dashboard](assets/Customer%20analysis.png)
 
-* Higher income customers show significantly higher spending
-* Wine and meat products generate highest revenue
+## What stood out
 
-## 📂 Files Included
+- **Income and spending:** Higher-income customer groups showed stronger spending patterns in the analysis.
+- **Product preferences:** Wine and meat products stood out among the higher-spending categories.
+- **Campaign planning:** Looking at spending alongside customer characteristics can help form better targeting hypotheses.
 
-* Dataset (Excel)
-* Power BI Dashboard
+These are descriptive findings. The dataset doesn't demonstrate that a campaign change improved revenue or marketing ROI.
 
-## 🚀 Outcome
+## How I'd use these findings
 
-Provided actionable insights to improve customer targeting, product focus, and marketing ROI.
+If this were part of a marketing team's workflow, I'd start by comparing segments on **spend, recency and campaign response**. Then I'd test whether a more tailored message performs better than a general campaign.
 
+I'd measure **response rate, conversion rate, revenue per contacted customer and acquisition cost** before claiming that a targeting strategy worked.
 
-## Repository files
+## Files
 
-### assets/
+| File | Description |
+|---|---|
+| [Customer Analysis dashboard](powerbi/Customer_Analysis.pbix) | Power BI report |
+| [Customer dataset](data/Customer_Analysis.xlsx) | Excel data and analysis |
+| [Dashboard screenshot](assets/Customer%20analysis.png) | Quick preview |
 
-- [Customer analysis.png](assets/Customer%20analysis.png)
+## A note on interpretation
 
-### powerbi/
+This is a portfolio analysis of customer behavior, not evidence of a live marketing campaign or an implemented business improvement. The recommendations are ideas to test, not measured outcomes.
 
-- [Customer_Analysis.pbix](powerbi/Customer_Analysis.pbix)
+---
 
-### data/
-
-- [Customer_Analysis.xlsx](data/Customer_Analysis.xlsx)
-
+[Ahmed Fazil](https://github.com/AhmedFazil007)
