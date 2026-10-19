@@ -22,3 +22,19 @@ Analyzed customer data to identify spending patterns, campaign effectiveness, an
 ## 🚀 Outcome
 
 Provided actionable insights to improve customer targeting, product focus, and marketing ROI.
+
+
+## Repository files
+
+### assets/
+
+- [Customer analysis.png](assets/Customer%20analysis.png)
+
+### powerbi/
+
+- [Customer_Analysis.pbix](powerbi/Customer_Analysis.pbix)
+
+### data/
+
+- [Customer_Analysis.xlsx](data/Customer_Analysis.xlsx)
+
