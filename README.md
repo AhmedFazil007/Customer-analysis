@@ -2,44 +2,43 @@
 
 **Excel · Power BI · Customer segmentation**
 
-I looked at customer spending and campaign response with one question in mind: **Which customer groups and product categories deserve a closer look when planning campaigns?**
+I wanted to understand why a marketing team might treat customers differently instead of sending everyone the same campaign. I used a customer-spending dataset and a Power BI dashboard to explore **which groups spend more, which products they buy and what I would check before recommending a targeted campaign**.
 
-The project combines an Excel dataset with a Power BI dashboard. I focused on making spending patterns easier to compare, rather than treating every customer as part of the same audience.
+## Dashboard
 
-## Dashboard preview
+![Customer analysis dashboard](assets/Customer%20analysis.png)
 
-![Customer analytics dashboard](assets/Customer%20analysis.png)
+## What I noticed
 
-## What stood out
+**Income and spending appear to move together.** Higher-income groups showed stronger spending patterns in the dashboard. That makes income worth investigating, but it doesn't tell me whether income alone predicts a response to marketing.
 
-- **Income and spending:** Higher-income customer groups showed stronger spending patterns in the analysis.
-- **Product preferences:** Wine and meat products stood out among the higher-spending categories.
-- **Campaign planning:** Looking at spending alongside customer characteristics can help form better targeting hypotheses.
+**Customers don't spend evenly across product categories.** Wine and meat products stood out in the analysis. I'd compare category preference with recency and purchase frequency before building any customer segments.
 
-These are descriptive findings. The dataset doesn't demonstrate that a campaign change improved revenue or marketing ROI.
+**Spending is not the same as campaign response.** A customer who buys more isn't automatically the most likely to respond to a promotion. I would check response rates by segment before deciding who should receive a campaign.
 
-## How I'd use these findings
+These are qualitative observations from the existing dashboard. I haven't added numerical segment comparisons here because the separate Python summaries still need to be run and verified.
 
-If this were part of a marketing team's workflow, I'd start by comparing segments on **spend, recency and campaign response**. Then I'd test whether a more tailored message performs better than a general campaign.
+## What I'd suggest
 
-I'd measure **response rate, conversion rate, revenue per contacted customer and acquisition cost** before claiming that a targeting strategy worked.
+If I were working on this for a marketing team, I'd start with a simple comparison of customer groups by **spend, recency and recorded campaign response**. Then I'd test a targeted message against a general one.
 
-## Reproduce customer segmentation
+I'd judge the result by **response rate and revenue per contacted customer**, and include campaign cost before claiming an improvement in marketing return.
 
-There's also a [Python segmentation script](python/customer_segments.py) and [method notes](docs/SEGMENTATION.md) to compare spending quartiles, income, recency and campaign response when those columns are present. The script is ready to run against the Excel workbook; outputs and any resulting figures still need validation.
+## How I explored the data
 
-## Files
+The repository includes an [Excel workbook](data/Customer_Analysis.xlsx), the [Power BI report](powerbi/Customer_Analysis.pbix) and the dashboard screenshot above.
 
-| File | Description |
-|---|---|
-| [Customer Analysis dashboard](powerbi/Customer_Analysis.pbix) | Power BI report |
-| [Customer dataset](data/Customer_Analysis.xlsx) | Excel data and analysis |
-| [Dashboard screenshot](assets/Customer%20analysis.png) | Quick preview |
+I've also included a [Python segmentation script](python/customer_segments.py) to group customers into spending quartiles and compare available income, recency and response fields.
 
-## A note on interpretation
+```bash
+pip install pandas openpyxl
+python python/customer_segments.py
+```
 
-This is a portfolio analysis of customer behavior, not evidence of a live marketing campaign or an implemented business improvement. The recommendations are ideas to test, not measured outcomes.
+The script writes summaries to `analysis/` when run. See [segmentation notes](docs/SEGMENTATION.md) for definitions and limitations. Its outputs haven't been independently verified in this README.
 
----
+## What I learned
 
-[Ahmed Fazil](https://github.com/AhmedFazil007)
+The useful part of segmentation isn't giving customers labels. It's checking whether those groups behave differently enough to support a better decision. I'd want to test the campaign before saying the segmentation worked.
+
+*Independent portfolio analysis, not a live marketing campaign or evidence of achieved revenue growth.*
